@@ -36,10 +36,11 @@ const Search = () => {
             className="form-control"
             placeholder="Enter keyword"
             value={keyword}
-            onChange={(e) => setKeyword(e.target.value)}
+            disabled={isLoading}
+            onChange={(e) => setKeyword(e.target.value.split(' ')[0])}
           />
         </div>
-        <button type="submit" className="btn btn-primary" disabled={isLoading}>
+        <button type="submit" className="btn btn-primary" disabled={isLoading || !keyword}>
           {isLoading ? 'Searching...' : 'Search'}
         </button>
       </form>
