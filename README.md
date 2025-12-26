@@ -8,18 +8,9 @@ This project is a React application built with Vite.
     ```bash
     npm install
     ```
-    or
-    ```bash
-    yarn install
-    ```
 
 2.  **Start the development server:**
     ```bash
     npm run dev
     ```
-    or
-    ```bash
-    yarn dev
-    ```
-
     The application will typically be available at `http://localhost:5173` (or another port if 5173 is in use).
